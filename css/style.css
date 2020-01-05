@@ -1,0 +1,30 @@
+body {
+    background: #333;
+}
+
+.sm-link{
+    font-size: 18px;
+}
+
+.navbar{
+    border-bottom: 3px solid #008ed6;
+    opacity: .8;
+}
+
+#about-section {
+    background: url("../images/about4.jpg");
+    background-repeat: no;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+
+.about-inner{
+    padding-top: 150px;
+}
+
+.dark-overlay {
+    width: 100%;
+    min-height: 700px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
