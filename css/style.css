@@ -1,5 +1,6 @@
 body {
-    background: #333;
+    /* background: #333; */
+    background: #f6f6f6;
 }
 
 .sm-link{
@@ -27,4 +28,8 @@ body {
     width: 100%;
     min-height: 700px;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+#projects-section{
+    background-color: #333;
 }
