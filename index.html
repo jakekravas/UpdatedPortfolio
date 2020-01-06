@@ -10,32 +10,28 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>My Portfolio</title>
 </head>
-<body>
-
+<body data-spy="scroll" data-target="#nav-main" id="about-section">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav id="nav-main" class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a href="#about-section" class="navbar-brand">Jake Kravas</a>
+            <a href="#about-section" class="navbar-brand ss">Jake Kravas</a>
             <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
             <div class="navbar-collapse collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#about-section" class="nav-link active">About</a>
+                        <a href="#about-section" class="nav-link ss active">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Resume</a>
+                        <a href="#projects-section" class="nav-link ss">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/jakekravas" target="_blank" class="nav-link"><i class="fab fa-github sm-link"></i></a>
+                        <a href="#contact-section" class="nav-link ss">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a href="https://www.linkedin.com/in/jake-kravas-80b02719b/"  target="_blank" class="nav-link"><i class="fab fa-linkedin-in sm-link"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/jakekravas" target="_blank" class="nav-link"><i class="fab fa-github sm-link"></i></a>
                     </li>
                 </ul>
             </div>
@@ -49,9 +45,8 @@
                 <div class="row">
                     <div class="col text-white">
                         <h1 class="display-4">Aspiring <strong>Full-Stack</strong> Web Developer</h1>
-                        <div class="p4 my-4">Based in Tucson, Arizona. Specializing in HTML, CSS, and JavaScript, as well as rapidly learning some of the most modern and in-demand back-end web technologies.</div>
-                        <a href="#" class="btn btn-primary btn-lg mr-2">My Projects <i class="fas fa-chevron-right"></i></a>
-                        <a href="#" class="btn btn-dark btn-lg">Contact Me <i class="fas fa-chevron-right"></i></a>
+                        <div class="p4 my-4">Based in Tucson, Arizona. Specializing in HTML, CSS, JavaScript, Node.js, as well as rapidly learning some more of the most modern and in-demand back-end web technologies available.</div>
+                        <a href="09-NodeJS-homework-demo.pdf" target="_blank" class="btn btn-primary btn-lg mr-2 ss">View Resume</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +81,7 @@
                 </div>
                 <div class="col-md-6">
                     <h3>Weather Forecast Web Application</h3>
-                    <p class="py-4">One of my earlier projects. A mobile responsive password generator that gives the user a randomly generated password based on user-specified criteria.</p>
+                    <p class="py-4">Allows user to search for any city they'd like and gives them both the current weather conditions as well as the five day forecast.</p>
                     <a href="https://jakekravas.github.io/Weather-Forecast-Application/" target="_blank" class="btn btn-link mb-3">Deployed Web Application</a>
                     <br>
                     <a href="https://github.com/jakekravas/Weather-Forecast-Web-Application" target="_blank" class="btn btn-link">GitHub Repository Link</a>
@@ -118,7 +113,7 @@
             <div class="row text-white">
                 <div class="col-sm-3 mt-5">
                     <i class="fas fa-phone contact-icon"></i>
-                    <h3 class="pt-2">Phone Number</h3>
+                    <h4 class="pt-2">Phone Number</h4>
                     <p>(630) 621-6609</p>
                 </div>
                 <div class="col-sm-3 mt-5">
@@ -127,12 +122,17 @@
                     <p>jakekravas7@gmail.com</p>
                 </div>
                 <div class="col-sm-3 mt-5">
-                    <i class="fab fa-linkedin contact-icon"></i>
-                    <h4 class="pt-3">LinkedIn Profile</h4 class="pt-2">
+                    <a class="contact-link" target="_blank" href="https://www.linkedin.com/in/jake-kravas-80b02719b/">
+                        <i class="fab fa-linkedin contact-icon"></i>
+                        <h4 class="pt-3">LinkedIn Profile</h4 class="pt-2">
+                    </a>
                 </div>
                 <div class="col-sm-3 mt-5">
-                    <i class="fab fa-github contact-icon"></i>
-                    <h4 class="pt-3">GitHub Profile</h4 class="pt-2">
+                    <a class="contact-link" href="https://github.com/jakekravas" target="_blank">
+                        <i class="fab fa-github contact-icon"></i>
+                        <h4 class="pt-3">GitHub Profile</h4 class="pt-2">
+                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -140,8 +140,12 @@
 
     <!-- <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.bundle.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
